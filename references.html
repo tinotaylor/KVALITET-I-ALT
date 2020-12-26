@@ -4,7 +4,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8" />
-    <title>KVALITET I ALT!</title>
+    <title>Kvalitetssikring - Kvalitet i alt</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -17,6 +17,20 @@
     <link rel="stylesheet" href="css/vendor.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="/css/inconfont.css" />
+
+    <style type="text/css" media="screen">
+      .s-styles {
+        padding-bottom: var(--vspace-4);
+      }
+
+      .s-styles > .row {
+        max-width: var(--width-max);
+      }
+
+      .s-styles .intro h1 {
+        margin-top: 0;
+      }
+    </style>
 
     <!-- script
     ================================================== -->
@@ -50,7 +64,7 @@
 
     <!-- header
     ================================================== -->
-    <header class="s-header">
+    <header class="s-header s-header--opaque">
       <div class="s-header__logo">
         <a class="logo" href="index.html">
           <img src="images/logo.svg" alt="Homepage" />
@@ -62,12 +76,14 @@
           <h3 class="s-header__nav-heading h6">Navigate to</h3>
 
           <ul class="s-header__nav">
-            <li class="current"><a href="index.html" title="">Home</a></li>
+            <li><a href="index.html" title="">Home</a></li>
             <li class="has-children">
               <a href="#0" title="">Services</a>
               <ul class="sub-menu">
                 <li><a href="tolkOgOversetter.html">Tolk og Oversetter</a></li>
-                <li><a href="Kvalitetssikring.html">Kvalitetssikring</a></li>
+                <li class="current">
+                  <a href="Kvalitetssikring.html">Kvalitetssikring</a>
+                </li>
               </ul>
             </li>
 
@@ -143,190 +159,92 @@
     </header>
     <!-- end s-header -->
 
-    <!-- hero
+    <!-- content
     ================================================== -->
-    <section id="hero" class="s-hero">
-      <div class="s-hero__slider">
-        <div class="s-hero__slide">
-          <div
-            class="s-hero__slide-bg"
-            style="background-image: url('images/slide1-bg-3000.jpg')"
-          ></div>
+    <section class="s-content">
+      <section class="s-styles">
+        <div class="row">
+          <div class="column large-12 intro">
+            <h1>Referanser.</h1>
 
-          <div class="row s-hero__slide-content animate-this">
-            <div class="column">
-              <div class="s-hero__slide-meta">
-                <span class="cat-links">
-                  <a href="#0">Expert</a>
-                  <a href="#0">Advice</a>
-                </span>
-                <span class="byline">
-                  For people,
-                  <span class="author">
-                    <a href="#0">By people</a>
-                  </span>
-                </span>
-              </div>
-              <h1 class="s-hero__slide-text">
-                <a href="#0">
-                  Kvalitet I Alt!<br />
-                  The future in quality assurance
-                </a>
-              </h1>
-            </div>
+            <!-- <p class="lead">
+              Kvalitet i alt har mange priser for hver tjeneste som er
+              tilgjengelig. Nedenfor finner du våre standardpriser, men hvert
+              produkt vil variere i pris avhengig av prosjektets krav. For mer
+              informasjon om priser eller for å få et skreddersydd tilbud,
+              vennligst kontakt oss via mobil eller via e-post via
+              kontaktseksjonen.
+            </p> -->
+
+            <!-- <hr class="fancy"> -->
           </div>
         </div>
-        <!-- end s-hero__slide -->
-
-        <div class="s-hero__slide">
-          <div
-            class="s-hero__slide-bg"
-            style="background-image: url('images/slide1-bg-30004.jpg')"
-          ></div>
-
-          <div class="row s-hero__slide-content animate-this">
-            <div class="column">
-              <div class="s-hero__slide-meta">
-                <div class="s-hero__slide-meta">
-                  <span class="cat-links">
-                    <a href="#0">Expert</a>
-                    <a href="#0">Advice</a>
-                  </span>
-                  <span class="byline">
-                    For people,
-                    <span class="author">
-                      <a href="#0">By people</a>
-                    </span>
-                  </span>
-                </div>
+        <section class="section-features">
+          <div class="row2">
+            <div class="col-1-of-3">
+              <div class="references-container">
+                <!-- <i style="color: transparent;" class="feature-box__icon icon-basic-world"></i> -->
+                <!-- <h3 class="heading-tertiary u-margin-bottom-small">
+                  Several Languages
+                </h3> -->
+                <p class="lead">
+                  Vi har jobbet med en rekke forskjellige organisasjoner, både
+                  bedrifts- og private virksomheter som har krevd assistanse med
+                  deres prosjekt eller juridiske behov. Her finner du en liste
+                  over selskapene vi har jobbet med, og vi ser frem til å jobbe
+                  med mange flere i nær fremtid når vi går videre.
+                </p>
               </div>
-              <h1 class="s-hero__slide-text">
-                <a href="#0"> We are here for your projects future success </a>
-              </h1>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="references-container">
+                <!-- <i class="feature-box__icon icon-basic-anticlockwise"></i> -->
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  Tilsyn og kvalitetssikring
+                </h3>
+                <ul class="feature-box__text">
+                  <li>Lørenskog kommune</li>
+                  <li>Oslo kommune</li>
+                  <li>Ullensaker kommune</li>
+                  <li>Ski kommune</li>
+                  <li>Frogn kommune</li>
+                  <li>Enebakk kommune</li>
+                  <li>Hurdal kommune</li>
+                  <li>Nes kommune</li>
+                  <li>Rygge kommune</li>
+                  <li>Oppegård kommune</li>
+                  <li>Bermingrud Entr AS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="references-container">
+                <!-- <i class="feature-box__icon icon-basic-anticlockwise"></i> -->
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  Referenser tolkarbeid
+                </h3>
+                <ul class="feature-box__text">
+                  <li>Hero Tolk</li>
+                  <li>Lørenskog kommune</li>
+                  <li>Rælingen kommune</li>
+                  <li>Oslo kommune</li>
+                  <li>Øst Politi</li>
+                  <li>Advokat</li>
+                  <li>Salita</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- end s-hero__slide -->
-
-        <div class="s-hero__slide">
-          <div
-            class="s-hero__slide-bg"
-            style="background-image: url('images/slide3-bg-3000.jpg')"
-          ></div>
-
-          <div class="row s-hero__slide-content animate-this">
-            <div class="column">
-              <div class="s-hero__slide-meta">
-                <div class="s-hero__slide-meta">
-                  <span class="cat-links">
-                    <a href="#0">Expert</a>
-                    <a href="#0">Advice</a>
-                  </span>
-                  <span class="byline">
-                    For people,
-                    <span class="author">
-                      <a href="#0">By people</a>
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <h1 class="s-hero__slide-text">
-                <a href="#0">
-                  Translation, management,<br />
-                  we can help
-                </a>
-              </h1>
-            </div>
-          </div>
-        </div>
-        <!-- end s-hero__slide -->
-      </div>
-      <!-- end s-hero__slider -->
-
-      <div class="s-hero__social hide-on-mobile-small">
-        <p>Follow</p>
-        <span></span>
-        <ul class="s-hero__social-icons">
-          <li>
-            <a target="_blank" href="https://www.facebook.com/ccdcv2219"
-              ><i class="fab fa-facebook-f" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/camelia-cristina-vendelsen-3424b118/"
-              ><i class="fab fa-linkedin" aria-hidden="true"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <!-- end s-hero__social -->
-
-      <div class="nav-arrows s-hero__nav-arrows">
-        <button class="s-hero__arrow-prev">
-          <svg
-            viewBox="0 0 15 15"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-          >
-            <path
-              d="M1.5 7.5l4-4m-4 4l4 4m-4-4H14"
-              stroke="currentColor"
-            ></path>
-          </svg>
-        </button>
-        <button class="s-hero__arrow-next">
-          <svg
-            viewBox="0 0 15 15"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-          >
-            <path
-              d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1"
-              stroke="currentColor"
-            ></path>
-          </svg>
-        </button>
-      </div>
-      <!-- end s-hero__arrows -->
+        </section>
+        <!-- end row -->
+      </section>
+      <!-- end s-styles -->
     </section>
-    <!-- end s-hero -->
+    <!-- end s-content -->
 
-    <!-- <section class="sponsors">
-      <div class="sponsors__content">
-        <div class="sponsors__title s-hero__slide-text">
-          <h2>SPONSORS</h2>
-        </div>
-        <div class="sponsors__container">
-          <div class="sponsors__logo">
-            <img src="/images/sponsors/neskom-logo.jpg" alt="neskom logo" />
-          </div>
-          <div class="sponsors__logo">
-            <img src="/images/sponsors/ccart.png" alt="ccartgallery logo" />
-          </div>
-          <div class="sponsors__logo">
-            <img
-              src="/images/sponsors/sign-text-logo.png"
-              alt="sign text logo"
-            />
-          </div>
-          <div class="sponsors__logo">
-            <img src="/images/sponsors/vignita-logo.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- footer ================================================== -->
+    <!-- footer
+    ================================================== -->
     <footer class="s-footer">
       <div class="s-footer__main">
         <div class="row">
@@ -334,10 +252,11 @@
             <h5>About Our Site</h5>
 
             <p>
-              Kvalitet i Alt er et selskap som er stolt av å sørge for at
-              planene følger kundens visjon. Vår visjon er at selskapet vårt
-              skal være en kilde til ekspertise og råd i våre områder, og at vi
-              bidrar til både privat og offentlig sektor.
+              Kvalitet i Alt is a quality assurance company that prides itself
+              in ensuring that plans go according to a customers vision. Our
+              vision is that our company will be a source of expertise and
+              advice in our areas, and that we contribute to both the private
+              and public sector.
             </p>
           </div>
           <!-- end s-footer__info -->
@@ -346,7 +265,7 @@
             <h5>Site Links</h5>
 
             <ul>
-              <li><a href="/om-oss.html">Om oss</a></li>
+              <li><a href="#0">Om oss</a></li>
               <li><a href="#0">FAQ</a></li>
               <li><a href="#0">Terms</a></li>
               <li><a href="#0">Privacy Policy</a></li>
@@ -358,9 +277,9 @@
             <h5>Follow Us</h5>
 
             <ul>
-              <li><a href="#0">Linked in</a></li>
+              <li><a href="#0">Linked In</a></li>
               <li><a href="#0">Facebook</a></li>
-              <li><a href="#0">Facebook</a></li>
+              <li><a href="#0">Instagram</a></li>
             </ul>
           </div>
           <!-- end s-footer__social links -->
@@ -368,20 +287,14 @@
           <div class="column large-3 medium-6 tab-12 s-footer__subscribe">
             <h5>Sign Up for Newsletter</h5>
 
-            <p>Signup to get updates on discounts, events and new services.</p>
+            <p>Sign up to get updates on discounts, events and new services.</p>
 
             <div class="subscribe-form">
-              <form
-                id="mc-form"
-                class="group"
-                novalidate="true"
-                method="post"
-                action="https://formspree.io/f/xeqpazko"
-              >
+              <form id="mc-form" class="group" novalidate="true">
                 <input
                   type="email"
                   value=""
-                  name="Email"
+                  name="dEmail"
                   class="email"
                   id="mc-email"
                   placeholder="Your Email Address"
@@ -399,14 +312,6 @@
         <!-- end row -->
       </div>
       <!-- end s-footer__main -->
-
-      <!-- modal -->
-      <!-- <div class="outer-modal">
-        <div class="inner-modal">
-          <h2>Special offer!</h2>
-          <p>get a discount on your first purchase with us</p>
-        </div>
-      </div> -->
 
       <div class="s-footer__bottom">
         <div class="row">

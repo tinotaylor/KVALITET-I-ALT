@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 /* ===================================================================
   * # basic/base setup styles
   *
@@ -135,6 +152,13 @@ body {
   margin: 0 auto; }
   .row2:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row2:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row2 {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row2::after {
     content: "";
     display: table;
@@ -143,6 +167,13 @@ body {
     float: left; }
     .row2 [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row2 [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row2 [class^="col-"] {
+        width: 100% !important; } }
   .row2 .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row2 .col-1-of-3 {
@@ -150,16 +181,15 @@ body {
   .row2 .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row2 .col-1-of-4 {
-    width: calc((100% - 3  * 6rem) / 4); }
+    width: calc((100% - 3 * 6rem) / 4); }
   .row2 .col-2-of-4 {
-    width: calc(2 * ((100% - 3  * 6rem) / 4) + 6rem); }
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row2 .col-3-of-4 {
-    width: calc(3 * ((100% - 3  * 6rem) / 4) + 2 * 6rem); }
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 /*FEATURE SECTION*/
 .section-features {
   padding: 5rem 0;
-  background-size: cover;
   width: 100%; }
 
 /* =================================================================== 
@@ -3720,6 +3750,7 @@ body.search-is-visible {
   * ## sponsors
   * ------------------------------------------------------------------- */
 .sponsors {
+  margin: 5px 10px;
   background-color: white;
   transition: 0.5s ease; }
 

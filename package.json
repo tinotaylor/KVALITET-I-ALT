@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "==================================================================================================",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^5.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/styles.css -w"
-
   },
   "repository": {
     "type": "git",
